@@ -1,15 +1,16 @@
 # keras-frcnn
 Keras implementation of Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks.
-cloned from https://github.com/yhenon/keras-frcnn/
+cloned from https://github.com/kbardool/keras-frcnn and https://github.com/yhenon/keras-frcnn/
 
 USAGE:
 `train_frcnn.py` can be used for training. I used dataset that prepared myself.
-`python train_frcnn.py -p /path/to/pascalvoc/`.
+`python train_frcnn.py -p /path/to/train_data/`.
 
-    `filepath,x1,y1,x2,y2,class_name`
+  `filepath,x1,y1,x2,y2,class_name`
+  
+You can use this script https://github.com/gokseltokur/coordinatesofimage to prepare your own dataset. It is easy way.
 
-    The classes will be inferred from the file. To use the simple parser instead of the default pascal voc style parser,
-    use the command line option `-o simple`. For example `python train_frcnn.py -o simple -p my_data.txt`.
+The classes will be inferred from the file. To use the simple parser instead of the default pascal voc style parser, use the command line option `-o simple`. For example `python train_frcnn.py -o simple -p my_data.txt
 
 - test_frcnn.py can be used to perform inference, given pretrained weights and a config file. Specify a path to the folder containing
 images:
