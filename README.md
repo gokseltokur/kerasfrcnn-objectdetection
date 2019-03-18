@@ -3,7 +3,7 @@ Keras implementation of Faster R-CNN: Towards Real-Time Object Detection with Re
 Cloned from https://github.com/kbardool/keras-frcnn and https://github.com/yhenon/keras-frcnn/
 
 USAGE:
-`train_frcnn.py` can be used for training. I used dataset that prepared myself.
+`train_frcnn.py` can be used for training. I used dataset I prepared myself.
 `python train_frcnn.py -p /path/to/train_data/`.
 
   `filepath,x1,y1,x2,y2,class_name`
