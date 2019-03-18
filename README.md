@@ -8,7 +8,7 @@ USAGE:
 
   `filepath,x1,y1,x2,y2,class_name`
   
-You can use this script https://github.com/gokseltokur/coordinatesofimage to prepare your own dataset. It is easy way.
+You can use this script https://github.com/gokseltokur/coordinatesofimage to prepare your own dataset label (text). It is easy way.
 
 The classes will be inferred from the file. To use the simple parser instead of the default pascal voc style parser, use the command line option `-o simple`. For example `python train_frcnn.py -o simple -p my_data.txt
 
